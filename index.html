@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess_The_Number_Jr's_Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome To JR's Game</h1>
+    <h2  class="one">Try To Won</h2>
+    <h2>Guess The Number.....<br>Please Input Only 1 to 10 Numbers</h2>
+    <input type="number" id="guessnumber">
+    <button onclick="func()" id="btn">Check</button>
+    <p id="result">Your Answer is Right / Wrong</p>
+    <p id="score">Score:10</p>
+
+    <script>
+        var guessnumber=document.getElementById("guessnumber")
+        var result=document.getElementById("result")
+        var score=document.getElementById("score")
+        var totalscore=10
+        function func(){
+            var checknumber=Math.floor(Math.random()*10)+1
+            var enternumber=guessnumber.value
+            console.log(checknumber)
+            if(enternumber==checknumber)
+            {
+                result.textContent="You are submit Right Answer"
+                alert("You Won")
+                 guessnumber.style.backgroundColor="rgb(13, 248, 53)"
+                 btn.style.backgroundColor=" rgb(13, 248, 53)"
+
+            }
+            else
+            {
+                result.textContent="You are Wrong"
+                totalscore=totalscore-1
+                score.textContent="Score:"+totalscore
+                guessnumber.style.backgroundColor="red"
+                btn.style.backgroundColor="red"
+
+            }
+            
+        }
+        
+
+    </script>
+</body>
+</html>

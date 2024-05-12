@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+
+}
+
+body{
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+h1{
+
+    text-shadow: white;
+    text-shadow: 10px;
+    color: aqua;
+    transition: 5s;
+
+}
+h2{
+    color: rgb(13, 248, 53);
+    transition: 5s;
+}
+h1, h2,p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+    
+}
+
+button{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+
+}
+
+#guessnumber{
+    display: inline-block;
+    margin-left: 40%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    transition: 5s;
+}
+#score{
+    font-size: larger;
+    background-image: url(img/vivid-blurred-colorful-background_58702-2545.webp);
+    display: inline-block;
+    margin-left: 45%;
+    padding: 15px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border-width: 5px;
+    transition: 5s;
+    
+
+}
+.one{
+    color: rgb(7, 30, 107);
+}
